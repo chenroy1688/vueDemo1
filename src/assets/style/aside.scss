@@ -1,0 +1,82 @@
+﻿/* ------------------------------
+   左侧下拉 css -- 设定
+------------------------------ */
+.aside_line{
+  border:1px solid #0000ff;
+}
+
+.aside_wrap{
+  min-width:250px; //最小宽度
+  width:250px;
+  overflow:hidden;
+  background-color:var(--main-Bggrey);
+  .aside_tab{
+    width:250px;
+    min-height:100vh;
+    height:100%;
+    .aside_head{
+      font-size:16px;
+      color:#fff;
+      letter-spacing: 7px;
+      text-align:center;
+      padding:var(--main-padding15);
+      background-color:var(--main-Bgblack);
+    }
+    li.aside_item{
+      a.isSelected{
+        color:#fff;
+        background-color:#666 !important;
+      }
+      a.item_title{
+        position:relative;
+        display:block;
+        text-align:left;
+        padding:20px 0 20px 30px;
+        background-color:var(--main-Bggreycec);
+        border-bottom:1px solid #999;
+        cursor: pointer;
+        overflow:hidden;
+        span.arrow{
+          display:block;
+          margin-right:18px;
+          float:right;
+          transition:all ease 0.3s;
+        }
+        span.chk_down{
+          transform:rotate(90deg);
+        }
+        span.chk_right{
+          transform:rotate(0deg);
+        }
+        &:hover{
+          color:#ff0000;
+          padding-left:20px;
+        }
+        &:after{
+          content:'';
+          position:absolute;
+          top:0px;
+          left:0px;
+          width:4px;
+          height:100%;
+          background-color: #d81e29;
+        }
+      }
+      ul{
+        li{
+          a{
+            display:block;
+            color:#666;
+            padding:15px;
+            text-align:center;
+            border-bottom:1px solid var(--main-Bggreycec);
+            &:hover{
+              color:#fff;
+              background-color:#d81e29;
+            }
+          }
+        }
+      }
+    } 
+  }
+}

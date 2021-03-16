@@ -1,0 +1,517 @@
+﻿/* ------------------------------
+   css 通用 -- 设定
+------------------------------ */
+@import "aside.scss";
+@import "commonTab_set";
+
+/* extend设定 -- (继承) */
+%underline{
+    text-decoration:none;
+}
+%transition{
+    transition:all 0.5s;
+}
+
+/* mixin设定 */
+@mixin css3-line($height,$bold){
+    line-height: $height;
+    font-weight: $bold;
+}
+
+/* 颜色設定 */
+$color1 :#0000ff;
+$yellow: #f7ed2a;
+$gray999: #999;
+$gray:#d3d3d3;
+$white:white;
+$red:#ff0000;
+$black:#000;
+$taohon: #d81e29;
+
+$lineGray:1px solid #d6d3d3;
+$lineWhite:1px solid #fff;
+$bdsolid:1px solid #000;
+
+/* 文字設定 */
+$ft12:12px;
+$ft14:14px;
+$ft16:16px;
+$ft18:18px;
+$ft20:20px;
+$ft22:22px;
+
+/* 间距設定 */
+$auto:0 auto;
+$num:15px;
+$lineHeight:25px;
+
+$marginTop:var(--main-margin30) 0;
+
+/* total 共用设定 ---------------------------------------------- */
+:root{
+  /* text color setting */
+  --main-black-color: #000;
+  --main-red-color:#ff0000;
+  --main-gray999-color: #999;
+  --main-grayd3-color:#d3d3cf;
+  
+  /* padding_margin setting */
+  --main-padding20:20px;
+  --main-padding25:0 20px;
+  --main-padding30:30px;
+
+  --main-margin20:20px;
+  --main-margin30:30px;
+
+  /* color setting */
+  --bar-main-color:rgb(232, 102, 102);
+  --top-main-color:rgb(216, 30, 41);
+  --white-main-color:rgb(255,255,255,1);
+
+  /* bg setting */
+  --main-Bggrey:#ebeced;
+  --main-Bggreycec:#cecaca;
+  --main-Bggrey999:#999;
+  --main-Bgblack:black;
+  --main-Bgblue:#2894FF;
+
+  /* border setting */
+  --main-bosGray:#ccc;
+  --main-bosGray02:#a9a9a7;
+}
+
+/* ------------------------------
+   css 通用 -- 设定
+------------------------------ */
+*{
+  margin:0;
+  padding:0;
+  list-style:none;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing:border-box;
+  box-sizing: border-box;
+}
+html, body { min-height: 100%;}
+.none{display:none !important;}
+.bos{border:1px solid $red}
+.bos2{border:1px solid $color1}
+
+.el_div{
+  padding:20px;
+  border:$lineGray;
+  span.topic{
+    display:block;
+    font-size:14px;
+    padding:10px 0;
+  }
+  > .el-input{ 
+      /deep/ .el-input__inner{ //深层作用选择器更改scss设定
+          width:200px;
+          color:#fff;
+          border:1px solid #999;
+          background-color:#333 !important;
+      }
+  }
+  h3{
+    font-size:18px;
+    padding:0 0 30px 0;
+  }
+}
+.el_div_noBor{
+  padding:20px;
+  background-color:$gray;
+}
+
+img { width: 100%; }
+span { vertical-align: baseline; }
+p { margin: 0;}
+a{
+  transition:all 0.5s;
+  text-decoration: none;
+}
+
+.contact_info{
+  padding:15px;
+  color:#d74554;
+  border:1px solid var(--main-grayd3-color);
+}
+
+button{
+  padding:10px 6px;
+  color:#fff;
+  font-size:14px;
+  text-align:center;
+  border-style:none;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow:hidden;
+}
+input{
+  width:250px;
+  height:40px;
+  padding:8px;
+  margin-right:15px;
+  font-size:16px;
+  color:#ff0000;
+}
+.overFlow{ overflow:hidden; }
+
+ul,li { margin: 0; padding: 0; list-style: none; }
+*:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* 图片 懒加载设定 ---------------------------------------------- */
+.img-box{
+  //loading图片大小
+  img[lazy="loading"] {
+      width:500px;
+      height:auto;
+      margin-top:30px;
+  }
+  //实际图片大小
+  img[lazy="loaded"] {
+      width:600px;
+      height:auto;
+      margin-top:30px;
+  }
+}
+
+.marTop{
+  margin:$marginTop 0;
+}
+
+.noMoreData{
+  font-size:16px;
+  font-weight: 600;
+  color:#ff0000;
+  padding:35px 0;
+  text-align:center;
+  border:1px solid #999;
+}
+
+.isComplete{
+  font-size:18px;
+  padding:20px 0 40px 0;
+  text-align:center;
+}
+
+.fade-enter-active,.fade-leave-active{
+  transition:opacity .5s;
+}
+.fade-enter, .fade-leave-to{
+  opacity:0
+}
+
+/* 按鈕作用 ---------------------------------------------- */
+.isActive{
+  background-color:#d81e2b !important;
+}
+.btnActive{
+  color:#fff !important;
+  background-color:var(--main-Bgblack) !important;
+}
+
+/* icon圖片 位置设定 ---------------------------------------------- */
+.NumberPosition1{background-position:0 -59px !important;}
+.NumberPosition2{background-position:0 -125px !important;}
+.NumberPosition3{background-position:0 -191px !important;}
+.NumberPosition4{background-position:0 -256px !important;}
+.NumberPosition5{background-position:0 -323px !important;}
+.NumberPosition6{background-position:0 -389px !important;}
+.NumberPosition7{background-position:0 -455px !important;}
+.NumberPosition8{background-position:0 -521px !important;}
+.NumberPosition9{background-position:0 -587px !important;}
+
+body{
+  margin:0;
+  padding:0;
+  height:100%; 
+  position: relative; /* 统一定位 */
+  font-family: arial,'Microsoft YaHei','SimHei','Microsoft JhengHei',"微軟正黑體";
+}
+
+/* total 外层设定 ---------------------------------------------- */
+.total_wrap{
+  min-width:100%;
+  width:100%;
+  min-height:100vh;
+  // background:url('../image/totalBg.jpg') top center no-repeat;
+  .total_content{
+    position:relative;
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    margin:0 auto;
+    .total_content_inside{
+      // min-width:1300px;
+      // width:85%;
+      min-height:100vh;
+      margin:10px auto 40px auto;
+    }
+  }
+}
+.pc_wrap{
+  width:1180px;
+}
+.m_menu{
+  ul{
+    .menu{
+      width:482px;
+      float:right;
+      box-sizing:border-box;
+      li{
+        position:relative;
+        display:block;
+        float:left;
+        width:120px;
+        height:55px;
+        transition: all 0.5s ease-out;
+        z-index:999;
+      }
+    }
+  }
+}
+
+/*  中间content设定 ---------------------------------------------- */
+.content{
+  background-color: var(--white-main-color);
+  padding:25px 0;
+  margin: 0;
+  p{
+    color:#999;
+  }
+  h1{
+    color: var(--main-gray999-color);
+    font-size:18px;
+    padding: var(--main-padding15 ) 0;
+  }
+  .col-3{
+    .contact_top{
+      height:50px;
+      color:#fff;
+      line-height:50px;
+      text-align:center;
+      background-color:$black;
+    }
+  }
+  .data_box{
+    margin:0 0 25px 0;
+    .date_icon{
+      position:relative;
+    }
+  }
+}
+
+
+/*  主标题 设定 ---------------------------------------------- */
+.topicOne{
+    height:66px;
+    margin:30px 0 20px 0;
+    // background:url('../images/web_pic.png') top left no-repeat;
+    background-position:0 -59px;
+  }
+  .contnet_main_topic{
+    span{
+      display:block;
+      color: var(--main-black-color);
+      padding-left:100px;
+      &:first-child{
+        font-size:32px;
+          letter-spacing:12px;
+      }
+      &:last-child{
+        color:$taohon;
+          padding-top:4px;
+      }
+    }
+  }
+
+/*  主标题 共同设定 ---------------------------------------------- */
+.top_topic{
+  position:relative;
+	height:47px;
+  background-color:#d81e29;
+  span{
+    position:absolute;
+    top:0;
+    left:-35px;
+    display:block;
+    width:100px;
+    height:47px;
+    transform-origin:bottom;
+    transform:skewX(-30deg) !important;
+    background-color:$black;
+    z-index:9;
+    border:$bdsolid;
+  }
+  .top_topic_info{
+    position:absolute;
+	  z-index:99;
+  }
+}
+
+.top_topic{
+  .top_topic_info{
+    div{
+      display:inline-block;
+      height:47px;
+      line-height:47px;
+      &:first-child{
+        width:80px;
+        height:1px;
+        margin-left:15px;
+        margin-bottom:5px;
+        border-bottom:$lineWhite;
+      }
+      &:nth-child(2){
+        padding:0 180px 0 25px;
+        font-size:20px;
+        color:#fff;
+      }
+      &:last-child{
+        padding-left:0px;
+        a{
+          color:#fff;
+          text-decoration: none;
+          &:hover{
+            color:#000;
+          }
+        }
+      }
+    }
+  }
+}
+
+//gamePlay page table setting
+.el-table .cell{
+  text-align:center;
+  padding:8px 0;
+  border-right:1px solid #d3d3d3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12)
+}
+.el-table td, .el-table th.is-leaf{
+  border-style:none;
+  padding:0;
+}
+.el-table th > .cell{
+  display:block;
+  background-color:black;
+  color:white;
+}
+
+
+.content .cardTab_txt{
+  padding:0 20px 20px 0;
+  background-color:var(--main-Bggrey);
+  border:1px solid #cdcbcb;
+}
+
+//標籤分頁
+.card p.card-text{
+  color:#333;
+  line-height:28px;
+}
+
+.card-body{ clear:both }
+.card-body h4 span{
+  margin:0 15px 0 0;
+}
+.card-body h4{
+  padding:20px 0;
+}
+.card-body .card-text a{
+   display:inline-block;
+   text-align:center;
+   padding:15px 25px;
+   color:#fff;
+   background-color:#999;
+}
+.card-body .card-text a:hover{
+   background-color:#000;
+}
+.card-body .card-text a ~ a{ 
+  border-left:1px solid #fff;
+}
+.card-body p.card-text{
+  color:#666;
+  margin:20px 0 0 0;
+}
+.card-body p.card-text:first-child{
+  margin:0;
+}
+
+
+.nav-link .list-group-item{
+  color:#fff;
+  background-color:rgba(0,0,0,0.3);
+}
+.router-link-active{
+  background-color:var(--main-Bgblack) !important;
+}
+
+
+//底部 -- 各功能製作技術說明
+.S_introduce{
+  margin-top:35px;
+}
+.S_introduce .S_introduce_div{
+  height:200px;
+  padding:20px;
+  border:1px solid var(--main-grayd3-color);
+}
+.S_introduce .S_introduce_div:first-child{
+  text-align:center;
+  line-height:160px;
+  letter-spacing: 14px;
+  background-color: var(--main-grayd3-color);
+}
+.S_introduce .S_introduce_div p{
+  padding-bottom:10px;
+}
+
+/* ------------------------------
+   mask checkbox -- 设定
+------------------------------ */
+.mask{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow-y:hidden;
+  background:rgba(0,0,0,0.8);
+  z-index:999;
+  .jmpView{
+    position:absolute;
+    width:50%;
+    height:auto;
+    padding:25px;
+    top:50%;
+    left:50%;
+    border-radius: 7px;
+    transform:translateX(-50%) translateY(-50%);
+    -ms-transform:translateX(-50%) translateY(-50%);
+    -moz-transform:translateX(-50%) translateY(-50%);
+    -webkit-transform:translateX(-50%) translateY(-50%);
+    -o-transform:translateX(-50%) translateY(-50%);
+    background-color:#fff;
+    .edit_content{
+      margin-top:30px;
+    }
+    .del-body{
+      margin-top:25px;
+      button{
+        width:48%;
+      }
+    }
+  }
+}
+
+
+
+

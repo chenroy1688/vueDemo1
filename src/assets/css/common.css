@@ -1,0 +1,26 @@
+﻿/* ------------------------------
+   img -- 设定
+------------------------------ */
+.topicOne{
+  background:url('../image/web_pic.png') top left no-repeat;
+}
+.total_wrap{
+  background:#000 url('../image/totalBg.jpg') top center no-repeat;
+}
+
+/* 標籤分頁 圖片設定 */
+.card-body .card-img{
+  width:520px;
+  height:203px;
+  float:left;
+  margin-right:23px;
+  background:url('../image/ad/tag_pic.jpg') top center no-repeat;
+}
+
+
+
+
+
+
+
+

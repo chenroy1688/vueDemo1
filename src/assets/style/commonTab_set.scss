@@ -1,0 +1,134 @@
+﻿/* ------------------------------
+   表单所有css -- 设定
+------------------------------ */
+.bosss{
+  border:1px solid #ff0000;
+}
+.bosGreay{
+  border:1px solid var(--main-bosGray);
+}
+
+
+
+//header主题 -- 学习大纲说明 共同设定
+.el_row{
+  background-color:#fff;
+  .topic_info{
+    border-left:1px solid #c6c4c4;
+  }
+  .el-div{
+    margin:0 auto;
+    text-align:left;
+    padding:15px;
+    .topic{
+      color:var(--top-main-color);
+    }
+    ul{
+      li{
+        padding:10px 0;
+      }
+    }
+  }
+}
+
+.panel-heading{
+  padding:25px;
+  background:rgba(0,0,0,0.2);
+  h1{
+    text-align:center;
+    font-size:20px;
+    padding-top:40px;
+  }
+}
+.panel-heading-info{
+  text-align:center;
+  margin:25px auto 0 auto;
+}
+.panel-heading-info span.circle{
+  display:inline-block;
+  font-size:20px;
+  width:35px;
+  height:35px;
+  text-align:center;
+  line-height: 35px;
+  margin:0 5px;
+  color:#fff;
+  border-radius: 50%;
+  background-color:#d81e2b;
+}
+
+//all 原生 表格设定
+.data_tab{
+  width:100%;
+  thead th{
+    color:#fff;
+    padding:7px 0;
+    text-align:center;
+    border:1px solid #fff;
+    background-color:var(--main-Bgblue);
+  }
+  tbody td{
+    text-align:center;
+    padding:15px 0;
+    border:1px solid var(--main-bosGray);
+    .delBtn{
+      font-size:14px;
+      padding:10px;
+    }
+  }
+  input[type="checkbox"]{
+    width:20px;
+    height:20px;
+  }
+}
+
+//all 表格设定
+.commonTab a.delBtn{
+  width:180px;
+  font-size:14px;
+  color:#fff;
+  border-radius: 5px;
+  padding:12px;
+  background-color:var(--main-Bgblue);
+}
+.commonTab a.delBtn:hover{
+  background-color:var(--main-Bgblack);
+}
+
+//表格 -- 分页设定
+.paginationBar{
+  width:420px;
+  margin:30px auto 0 auto;
+}
+
+.form_head{
+  margin:20px 0 0 0;
+  padding:20px 0 20px 20px;
+  background-color: var(--main-grayd3-color);
+  overflow:hidden;
+  .s_introduce_input{
+    float:left;
+    margin-top:6px;
+  }
+  .TimePicker{
+    width:250px;
+    height:40px;
+    color:#000 !important;
+    padding:5px 0 5px 0;
+    font-size:16px;
+    color:#ff0000;
+    float:left;
+  }
+}
+
+.el-date-editor.el-input, .el-date-editor.el-input__inner{
+  border:1px solid var(--main-bosGray02);
+}
+
+//表格 --
+.data_div{
+  button.btn-delete{
+    margin-left:8px;
+    background-color:#d81e2b;
+  }
+}

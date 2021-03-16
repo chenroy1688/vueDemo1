@@ -1,0 +1,53 @@
+export default{
+    count:100,
+      gameText : '1111111111',
+      curVal:1, //载入初始数据
+      residence:false,
+      todos:[
+        {
+          id:1,
+          name:'roy',
+          content:'soniclive.cn',
+          done:true
+        },
+        {
+          id:2,
+          name:'well',
+          content:'bootstrat.com.tw',
+          done:false
+        },
+        {
+          id:3,
+          name:'bob',
+          content:'yahoo.com.tw',
+          done:true
+        },
+        {
+          id:4,
+          name:'jane',
+          content:'stand168.com',
+          done:true
+        }
+      ],
+      //计划数据
+      todoLists:[
+          {
+              id:1,
+              name:'“我一直认为，乔丹第一次退役，并选择去打棒球的真正原因',
+              status:true
+          },
+          {
+              id:2,
+              name:'前公牛球员史蒂夫-科尔近日在采访中谈及了迈克尔-乔丹第一次退役的缘由',
+              status:true
+          },
+          {
+              id:3,
+              name:'沃顿：即使赛季取消 国王今年也算得上成功',
+              status:false
+          }
+      ],
+      //真实要渲染的数据
+      newLists:[],
+      tableData:[]
+}
