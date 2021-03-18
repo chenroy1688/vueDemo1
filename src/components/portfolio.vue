@@ -53,7 +53,7 @@
 import busDemo from './slot/busDemo.vue'
 //引入mapState
 import { mapActions, mapGetters, mapState, mapMutations } from 'vuex' 
-//引入数据接口
+//引入数据接口 @根目錄 src/
 import { userList } from '@/api/api'
 //同层vue先建立bus实例 透过bus传值
 import { bus } from '../bus.js' 
