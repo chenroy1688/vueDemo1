@@ -5,8 +5,8 @@
 import {get,post} from './http'
 
 //首页请求 gameData
-export const getGameApi = () => get('../static/gameData.json'); //体育赛事数据
-export const getNewsApi = () => get('../static/newsDatas.json'); //体育新闻数据
+export const getGameApi = () => get('./static/gameData.json'); //体育赛事数据
+export const getNewsApi = () => get('./static/newsDatas.json'); //体育新闻数据
 //赛事直播 
 export const gamePlayApi = () => get('https://jsonplaceholder.typicode.com/users'); 
 //最新信习usersPage
