@@ -9,7 +9,7 @@ export const getGameApi = () => get('../static/gameData.json'); //体育赛事�
 export const getNewsApi = () => get('../static/newsDatas.json'); //体育新闻数据
 //赛事直播 
 export const gamePlayApi = () => get('https://jsonplaceholder.typicode.com/users'); 
-//最新信习
+//最新信习usersPage
 export const userList = () => get('https://jsonplaceholder.typicode.com/users');
 //form4_All 懒加载数据接口 get请求
 export const LazyLoadApi = () => get('http://jsonplaceholder.typicode.com/posts');

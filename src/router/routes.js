@@ -285,7 +285,7 @@ export const routes = [
     }
   },
   { //备忘录功能 (子选项02 -- 备忘录计划表todoList)
-    path:'/todoList',
+    path:base + '/todoList',
     components:{
       default : resolve => require(['@/components/TodoList/TodoList'],resolve),
       rightmenu:RightMenu, //右侧 新闻区
