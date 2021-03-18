@@ -13,6 +13,8 @@ import store from './store'
 import VueLazyload from 'vue-lazyload' 
 //引入echarts图表
 import echarts from 'echarts'
+//全局統一路徑
+import { publicPath } from '../vue.config'
 
 //引入css
 import './assets/css/reset.css' //css reset
@@ -56,6 +58,7 @@ Vue.prototype.$http = axios
 
 //创建路由设置
 const router = new Router({
+  base:publicPath,
   routes,
   mode: 'history' //采用历史模式 网址路径不用hash
 })
