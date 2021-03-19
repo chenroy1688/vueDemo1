@@ -10,13 +10,13 @@ module.exports = [
     subItems: [
             {
                 name: '工作计划表 / todoList',
-                href:'/vueDemo1/AboutUs',
+                href:'/AboutUs',
                 icon:'icon-home',
                 componentName: 'AboutUsne'
             }, 
             {
                 name: '备忘录 / todoList',
-                href:'/vueDemo1/todoList',
+                href:'/todoList',
                 icon:'icon-home',
                 componentName: 'TodoList'
             }
