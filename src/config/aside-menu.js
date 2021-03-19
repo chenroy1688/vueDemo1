@@ -1,3 +1,5 @@
+import { publicPath } from '../vue.config'
+
 module.exports = [
     {
     name: '备忘录功能',
@@ -8,13 +10,13 @@ module.exports = [
     subItems: [
             {
                 name: '工作计划表 / todoList',
-                href:'/AboutUs',
+                href:publicPath+'/AboutUs',
                 icon:'icon-home',
                 componentName: 'AboutUsne'
             }, 
             {
                 name: '备忘录 / todoList',
-                href:'/todoList',
+                href:publicPath+'/todoList',
                 icon:'icon-home',
                 componentName: 'TodoList'
             }
