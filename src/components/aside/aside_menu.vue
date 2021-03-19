@@ -16,10 +16,14 @@
                         <!-- 内容子选单 -->
                         <ul class="aside_second_item" v-show="n == index">
                             <li v-for="(sub,secIndex) in list.subItems" :key="secIndex">
-                                <a :href="sub.href">
+                                <!-- <a :href="sub.href">
                                     <span :class="list.icon"></span>
                                     {{ sub.name }}
-                                </a>
+                                </a> -->
+                                <router-link :to="sub.href">
+                                    <span :class="list.icon"></span>
+                                    {{ sub.name }}
+                                </router-link>
                             </li>
                         </ul>
                     </li>
