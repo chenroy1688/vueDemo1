@@ -1,4 +1,4 @@
-import { publicPath } from '../vue.config'
+// import { publicPath } from '../vue.config'
 
 module.exports = [
     {
@@ -10,13 +10,13 @@ module.exports = [
     subItems: [
             {
                 name: '工作计划表 / todoList',
-                href:publicPath+'/AboutUs',
+                href:'/vueDemo1/AboutUs',
                 icon:'icon-home',
                 componentName: 'AboutUsne'
             }, 
             {
                 name: '备忘录 / todoList',
-                href:publicPath+'/todoList',
+                href:'/vueDemo1/todoList',
                 icon:'icon-home',
                 componentName: 'TodoList'
             }
