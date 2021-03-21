@@ -5,8 +5,8 @@
                 <!-- 主标题 -->
                     <el-row>
                         <el-col :span="24" class="contnet_main_topic topicOne NumberPosition1">
-                            <span>赛事预测</span>
-                            <span>Sport Forecast</span>
+                            <span>Vuex練習</span>
+                            <span>Forecast</span>
                         </el-col>
                     </el-row>
                     <!-- 引用store数据 -->
@@ -52,7 +52,7 @@
                         </el-col>
                     </el-row>
 
-                    <div class="el-steps">
+                    <!-- <div class="el-steps">
                         <el-steps 
                             :space="200" 
                             direction="vertical"
@@ -74,7 +74,7 @@
                                 </el-collapse-item>
                             </div>
                         </el-collapse>
-                    </div>
+                    </div> -->
             </el-row>
         </el-row>
    </div>

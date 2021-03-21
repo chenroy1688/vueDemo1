@@ -4,7 +4,7 @@
          <!-- 主标题 -->
          <el-row>
             <el-col :span="24" class="contnet_main_topic topicOne NumberPosition1">
-                  <span>音速直播</span>
+                  <span>中国疫情地图</span>
                   <span>ChinaMap</span>
             </el-col>
          </el-row>

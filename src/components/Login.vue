@@ -16,6 +16,7 @@
                 <button type="submit">登入</button> 
             </form>
         </div>
+        <div>帳號:aaaa / 密碼:9999</div>
     </div>
 </template>
 
