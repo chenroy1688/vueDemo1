@@ -145,7 +145,7 @@ export default {
                 TabData : res.data
             })
         })
-     }
+     },
      //全选功能
      changAll(){
          this.$store.dispatch({
