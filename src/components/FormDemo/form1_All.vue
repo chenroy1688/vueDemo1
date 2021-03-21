@@ -97,6 +97,8 @@
 <script>
 //引入Vuex
 import { mapState,mapGetters,mapMutations,mapActions } from 'vuex'
+//引入封装api接口
+import { getTableData } from '@/api/api'
 
 export default {
     components:{
@@ -120,18 +122,30 @@ export default {
         )
    },
    methods:{
-     getLists(){ //请求表单数据
-         this.$http.get("../static/tableData.json")
-         .then(res => {
+    //请求表单数据
+    //  getLists(){ 
+    //      this.$http.get("../static/tableData.json")
+    //      .then(res => {
+    //          console.log('res.data',res.data)
+    //         this.$store.dispatch({
+    //             type    :'getTabData',
+    //             TabData : res.data
+    //         })
+    //      })
+    //      .catch(res => {
+    //          console.log("请求数据错误")
+    //      })
+    //  },
+     getLists(){ 
+         getTableData()
+        .then(res => {
+            console.log('res.data',res.data)
             this.$store.dispatch({
-                type    :'getTabData',
+                type:'getTabData',
                 TabData : res.data
             })
-         })
-         .catch(res => {
-             console.log("请求数据错误")
-         })
-     },
+        })
+     }
      //全选功能
      changAll(){
          this.$store.dispatch({

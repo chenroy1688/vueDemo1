@@ -94,17 +94,17 @@
         </div> 
 
         <!-- 弹筐组件 (新增) -->
-        <EditForm
+        <!-- <EditForm
             title="新增数据"
             :visible.sync="showAddForm"
             @save="handleAddEmployee" 
-        ></EditForm>
+        ></EditForm> -->
         <!-- 弹筐组件 (编辑) -->
-        <EditForm
+        <!-- <EditForm
             title="編輯數據"
             :visible.sync="showEditForm"
             @save="handleEditEmployee"
-        ></EditForm>
+        ></EditForm> -->
    </div><!-- end of pc_wrap -->
 </template>
 

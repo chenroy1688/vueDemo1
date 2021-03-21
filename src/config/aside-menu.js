@@ -8,12 +8,12 @@ module.exports = [
     flag:false,
     arrow:'▶',
     subItems: [
-            {
-                name: '工作计划表 / todoList',
-                href:'/AboutUs',
-                icon:'icon-home',
-                componentName: 'AboutUsne'
-            }, 
+            // {
+            //     name: '工作计划表 / todoList',
+            //     href:'/AboutUs',
+            //     icon:'icon-home',
+            //     componentName: 'AboutUsne'
+            // }, 
             {
                 name: '备忘录 / todoList',
                 href:'/todoList',
@@ -23,7 +23,7 @@ module.exports = [
         ]
     }, 
     {
-    name: '表单功能',
+    name: '表单功能練習',
     id: 'TodoList-system',
     icon:'icon-user', 
     flag:false,
@@ -62,28 +62,28 @@ module.exports = [
         ]
     },
     {
-    name: '基础功能区',
+    name: 'Vuex練習',
     id: 'basic-system',
     icon:'icon-home',
     flag:false,
     arrow:'▶',
     subItems: [
             {
-                name: '基础选项A',
+                name: 'Vuex練習',
                 href:'/forecast',
                 icon:'icon-video',
                 componentName: 'TodoList'
             }, 
-            {
-                name: '基础选项B',
-                href:'/personname',
-                icon:'icon-video',
-                componentName: 'aside_two'
-            }
+            // {
+            //     name: '基础选项B',
+            //     href:'/personname',
+            //     icon:'icon-video',
+            //     componentName: 'aside_two'
+            // }
         ]
     },
     {
-    name: '会员地图功能',
+    name: '中國疫情地圖',
     id: 'basic-system',
     icon:'icon-mobile',
     flag:false,
@@ -95,12 +95,12 @@ module.exports = [
                 icon:'icon-video',
                 componentName: 'chinaMap'
             }, 
-            {
-                name: '会员地图功能',
-                href:'/personname',
-                icon:'icon-video',
-                componentName: 'aside_two'
-            }
+            // {
+            //     name: '会员地图功能',
+            //     href:'/personname',
+            //     icon:'icon-video',
+            //     componentName: 'aside_two'
+            // }
         ]
     },
     {
